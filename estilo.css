@@ -1,0 +1,178 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Dancing+Script:wght@400..700&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+/*ESTILIZAÇÃO DO INDEX*/
+
+body{
+    color: white;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 480px) {
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none; /*REMOVE O MARCADOR DA LISTA*/
+    align-items: center; /*CENTRALIZA VERTICALMENTE*/
+    padding: 10px; /*ESPAÇAMENTO*/
+}
+
+.menu{
+    font-family: "Abril Fatface", serif;
+    background-color: black;
+}
+
+.menu, nav a{
+    color: white;
+    text-decoration: none; /**REMOVE O SUBLINHADO DA LISTA*/
+    padding-right: 10px;
+    font-size: 20px;
+    position: relative;
+}
+
+header img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid rgb(40, 148, 236);
+}
+
+.centraliza{
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    font-family: "Abril Fatface", serif;
+    color: rgb(40, 148, 236);
+}
+
+h2{
+    text-align: center;
+}
+
+footer img{
+    width: 50px;
+    height: 50px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+footer a{
+    margin: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+footer p{
+    margin-top: 2px;
+}
+
+.container{
+    padding: 0px 50px; /*DE CIMA ATÉ EM BAIXO VAI TER 0 ESPAÇAMENTO, DA ESQUERDA ATÉ A DIREITA VAI TER 50 DE ESPAÇO*/
+}
+
+nav a:hover{
+    color: rgb(40, 148, 236);
+}
+
+header{
+    font-size: 20px;
+}
+
+section h3{
+    font-family: "Libre Baskerville", serif;
+    font-size: 25px;
+}
+
+section p{
+    font-size: 20px;
+}
+
+/*ESTILIZAÇÃO DO CONTATO*/
+
+section.formulario{
+    padding: 80px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex; /*PARA DEIXAR AS CAIXAS DO FORMULÁRIO UMA DO LADO DA OUTRA*/
+    justify-content: center; /*PARA CENTRALIZAR AS CAIXAS DO FORMULÁRIO*/
+    flex-direction: column; /*PARA DEIXAR AS CAIXAS DO FORMULÁRIO EM MODO DE COLUNAS*/
+    gap: 10px; /*PARA CRIAR UM DISTANCIAMENTO ENTRE AS CAIXAS DE FORMULÁRIO.*/
+    margin-top: 40px;
+}
+
+/*PARA ESTILIZAR OS CAMPOS DE TEXTO DO CONTATO*/
+
+form input, form textarea{ 
+    width: 100%;
+    background-color: #242424;
+    border: 0; /*PARA REMOVER A BORDA DO CAMPO*/
+    outline: 0; /*PARA REMOVER O CONTORNO DO CAMPO*/
+    padding: 20px 15px; /*PARA AUMENTAR O ESPAÇO INTERNO DOS CAMPOS DE TEXTO*/
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+}
+
+form textarea{
+    resize: none; /*PARA NÃO PERMITIR O REDIRECIONAMENTO/QUEBRA DA CAIXA DE TEXTO*/
+    max-height: 200px;
+}
+
+form .btn-enviar{
+    margin-top: 20px; /*PARA DEIXAR O BOTÃO DE ENVIAR UM POUCO MAIS DISTANTE DO RESTANTE DAS CAIXAS DE TEXTO*/
+    text-align: center; /*PARA CENTRALIZAR O BOTÃO DE ENVIAR*/
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color: rgb(40, 148, 236);
+    color: black;
+    cursor: pointer;
+}
+
+form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px rgb(40, 148, 236);
+    transform: scale(1.05);
+}
+
+/*ESTILIZAÇÃO DO ARQUIVO PROJETOS*/
+
+.projeto img{
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.projeto a{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    margin: 20px;
+    color: white;
+}
+
+
+/*ESTILIZAÇÃO DO ARQUIVO PROJETOS*/
+
+.formacao{
+    display: flex;
+    justify-content: center;
+    margin: 80px;
+}
